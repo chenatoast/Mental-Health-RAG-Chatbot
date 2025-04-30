@@ -104,6 +104,12 @@ HF_TOKEN=your_huggingface_token_here
 streamlit run app.py
 ```
 
-Answer will be extracted directly from the Emotional Aid PDF, and not invented.
+## Ways to Improve Accuracy
 
+- Upgrading from Mistral-7B to a more powerful model (like LLaMA-2, Claude, or GPT variants) can yield better reasoning and understanding.
+- Fine-tuning a language model on mental health–related conversations or medical QA data can improve contextual accuracy.
+- You can edit the chain type from stuff: Use conversational memory to handle follow-up questions and maintain dialogue continuity.
+- Apply response filtering, human-in-the-loop evaluations, or confidence thresholds to reject hallucinated answers.
+
+  
 Developed by Manasvi :)
