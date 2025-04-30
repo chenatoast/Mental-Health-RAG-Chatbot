@@ -1,4 +1,4 @@
-# Mental Health Chatbot
+# RAG based Mental-Health Chatbot 
 
 A mental health Q&A chatbot that uses LangChain, HuggingFace, FAISS, and Mistral LLMs. It reads content from a custom PDF — Emotional Aid — and answers user questions based strictly on that information.
 
