@@ -1,4 +1,4 @@
-# Emotional Aid Chatbot
+# Mental Health Chatbot
 
 A mental health Q&A chatbot that uses LangChain, HuggingFace, FAISS, and Mistral LLMs. It reads content from a custom PDF — Emotional Aid — and answers user questions based strictly on that information.
 
@@ -80,20 +80,6 @@ On user prompt, the top relevant chunks are fetched using FAISS and sent to the 
 ### User Interface
 The user interacts via a Streamlit chat interface which shows both questions and AI-generated responses.
 
-## File Structure
-
-```
-project-root/
-│
-├── data/                    # Contains Emotional Aid PDF
-├── vectorstore/             # FAISS vector store files
-├── app.py                   # Streamlit UI and app logic
-├── load_pdf.py              # PDF loading and chunking
-├── vector_store_builder.py  # Embedding and FAISS creation
-├── query_runner.py          # LLM, prompt, and retrieval logic
-├── .env                     # Contains HuggingFace API key
-└── README.md                # Project documentation
-```
 
 ## Setup Instructions
 
@@ -111,11 +97,6 @@ Create a .env file and include:
 HF_TOKEN=your_huggingface_token_here
 ```
 
-### Run Vector Store Builder (One-Time)
-
-```bash
-python vector_store_builder.py
-```
 
 ### Run the Streamlit App
 
@@ -123,21 +104,6 @@ python vector_store_builder.py
 streamlit run app.py
 ```
 
-## Example Query
-
-```
-Question: What are the recommended coping techniques for anxiety?
-```
 Answer will be extracted directly from the Emotional Aid PDF, and not invented.
 
-## Limitations
-
-- The chatbot only answers based on the content of the provided PDF.
-- It does not substitute professional mental health guidance.
-- Accuracy depends on clarity and completeness of the source document.
-
-## Future Improvements
-
-- Support for multiple PDFs and topics
-- Better memory and summarization over longer conversations
-- Sentiment-aware responses for user emotional support
+Developed by Manasvi :)
