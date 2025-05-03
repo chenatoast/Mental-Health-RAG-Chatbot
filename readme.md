@@ -4,7 +4,7 @@ A mental health Q&A chatbot that uses LangChain, HuggingFace, FAISS, and Mistral
 
 ## Project Purpose
 
-This chatbot is designed to help users understand and reflect on mental health concepts by retrieving relevant insights from a structured mental health resource. It does not make up information and only responds with content available in the Emotional Aid PDF.
+This chatbot is designed to help users understand and reflect on mental health concepts by retrieving relevant insights from a structured mental health resource. It does not make up information and only responds with content available in the Emotional Aid PDF. This feature very well defines the use of RAG principle.
 
 ## System Architecture
 
